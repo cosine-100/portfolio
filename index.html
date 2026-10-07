@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" href="assets/logo-mark.png" />
+    <title>Cosine Tech — Code × Camera × Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:ital,wght@1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+    <noscript
+      ><style>
+        .rv {
+          opacity: 1;
+          transform: none;
+        }
+      </style></noscript
+    >
+  </head>
+  <body>
+    <!-- Scroll progress bar -->
+    <div class="pg"></div>
+    <!-- ============ NAVIGATION ============ -->
+    <nav>
+      <div class="wrap">
+        <a class="logo" href="#home"
+          ><img src="assets/logo-mark.png" alt="Logo" /><span>COSINE <b>TECH</b></span></a
+        ><button class="burger" aria-label="Menu">☰</button>
+        <div class="links">
+          <a href="#home">Home</a><a href="#web">Web</a><a href="#photo">Photo &amp; Video</a
+          ><a href="#design">Design</a><a href="#works">Works</a><a href="#about">About</a
+          ><a href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <!-- ============ HERO / LANDING ============ -->
+    <header class="hero" id="home">
+      <div class="leaks" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="code-bg" aria-hidden="true">
+        <pre><i class="t">&lt;!DOCTYPE html&gt;</i>
+<i class="t">&lt;html lang=<i class="s">"en"</i>&gt;</i>
+<i class="t">&lt;head&gt;</i>
+  <i class="t">&lt;meta charset=<i class="s">"UTF-8"</i>&gt;</i>
+  <i class="t">&lt;title&gt;</i>Cosine Tech<i class="t">&lt;/title&gt;</i>
+  <i class="t">&lt;link rel=<i class="s">"stylesheet"</i> href=<i class="s">"style.css"</i>&gt;</i>
+<i class="t">&lt;/head&gt;</i>
+<i class="t">&lt;body&gt;</i>
+  <i class="t">&lt;header class=<i class="s">"hero"</i>&gt;</i>
+    <i class="t">&lt;h1 class=<i class="s">"title"</i>&gt;</i>I BUILD.<i class="t">&lt;/h1&gt;</i>
+    <i class="t">&lt;p&gt;</i>Digital experiences &amp; visual stories.<i class="t">&lt;/p&gt;</i>
+    <i class="t">&lt;a class=<i class="s">"cta"</i> href=<i class="s">"#work"</i>&gt;</i>Explore<i class="t">&lt;/a&gt;</i>
+  <i class="t">&lt;/header&gt;</i>
+  <i class="t">&lt;section id=<i class="s">"projects"</i>&gt;</i>
+    <i class="t">&lt;article class=<i class="s">"card"</i>&gt;</i>
+      <i class="t">&lt;h3&gt;</i>Examination Verification System<i class="t">&lt;/h3&gt;</i>
+      <i class="t">&lt;button onclick=<i class="s">"verify()"</i>&gt;</i>Scan QR<i class="t">&lt;/button&gt;</i>
+    <i class="t">&lt;/article&gt;</i>
+  <i class="t">&lt;/section&gt;</i>
+  <i class="t">&lt;script&gt;</i>
+    const app = express();
+    app.get(<i class="s">"/api/exams"</i>, async (req, res) =&gt; {
+      res.json(await Exam.find());
+    });
+  <i class="t">&lt;/script&gt;</i>
+<i class="t">&lt;/body&gt;</i>
+<i class="t">&lt;/html&gt;</i>
+<i class="t">&lt;!DOCTYPE html&gt;</i>
+<i class="t">&lt;html lang=<i class="s">"en"</i>&gt;</i>
+<i class="t">&lt;head&gt;</i>
+  <i class="t">&lt;meta charset=<i class="s">"UTF-8"</i>&gt;</i>
+  <i class="t">&lt;title&gt;</i>Cosine Tech<i class="t">&lt;/title&gt;</i>
+  <i class="t">&lt;link rel=<i class="s">"stylesheet"</i> href=<i class="s">"style.css"</i>&gt;</i>
+<i class="t">&lt;/head&gt;</i>
+<i class="t">&lt;body&gt;</i>
+  <i class="t">&lt;header class=<i class="s">"hero"</i>&gt;</i>
+    <i class="t">&lt;h1 class=<i class="s">"title"</i>&gt;</i>I BUILD.<i class="t">&lt;/h1&gt;</i>
+    <i class="t">&lt;p&gt;</i>Digital experiences &amp; visual stories.<i class="t">&lt;/p&gt;</i>
+    <i class="t">&lt;a class=<i class="s">"cta"</i> href=<i class="s">"#work"</i>&gt;</i>Explore<i class="t">&lt;/a&gt;</i>
+  <i class="t">&lt;/header&gt;</i>
+  <i class="t">&lt;section id=<i class="s">"projects"</i>&gt;</i>
+    <i class="t">&lt;article class=<i class="s">"card"</i>&gt;</i>
+      <i class="t">&lt;h3&gt;</i>Examination Verification System<i class="t">&lt;/h3&gt;</i>
+      <i class="t">&lt;button onclick=<i class="s">"verify()"</i>&gt;</i>Scan QR<i class="t">&lt;/button&gt;</i>
+    <i class="t">&lt;/article&gt;</i>
+  <i class="t">&lt;/section&gt;</i>
+  <i class="t">&lt;script&gt;</i>
+    const app = express();
+    app.get(<i class="s">"/api/exams"</i>, async (req, res) =&gt; {
+      res.json(await Exam.find());
+    });
+  <i class="t">&lt;/script&gt;</i>
+<i class="t">&lt;/body&gt;</i>
+<i class="t">&lt;/html&gt;</i>
+<i class="t">&lt;!DOCTYPE html&gt;</i>
+<i class="t">&lt;html lang=<i class="s">"en"</i>&gt;</i>
+<i class="t">&lt;head&gt;</i>
+  <i class="t">&lt;meta charset=<i class="s">"UTF-8"</i>&gt;</i>
+  <i class="t">&lt;title&gt;</i>Cosine Tech<i class="t">&lt;/title&gt;</i>
+  <i class="t">&lt;link rel=<i class="s">"stylesheet"</i> href=<i class="s">"style.css"</i>&gt;</i>
+<i class="t">&lt;/head&gt;</i>
+<i class="t">&lt;body&gt;</i>
+  <i class="t">&lt;header class=<i class="s">"hero"</i>&gt;</i>
+    <i class="t">&lt;h1 class=<i class="s">"title"</i>&gt;</i>I BUILD.<i class="t">&lt;/h1&gt;</i>
+    <i class="t">&lt;p&gt;</i>Digital experiences &amp; visual stories.<i class="t">&lt;/p&gt;</i>
+    <i class="t">&lt;a class=<i class="s">"cta"</i> href=<i class="s">"#work"</i>&gt;</i>Explore<i class="t">&lt;/a&gt;</i>
+  <i class="t">&lt;/header&gt;</i>
+  <i class="t">&lt;section id=<i class="s">"projects"</i>&gt;</i>
+    <i class="t">&lt;article class=<i class="s">"card"</i>&gt;</i>
+      <i class="t">&lt;h3&gt;</i>Examination Verification System<i class="t">&lt;/h3&gt;</i>
+      <i class="t">&lt;button onclick=<i class="s">"verify()"</i>&gt;</i>Scan QR<i class="t">&lt;/button&gt;</i>
+    <i class="t">&lt;/article&gt;</i>
+  <i class="t">&lt;/section&gt;</i>
+  <i class="t">&lt;script&gt;</i>
+    const app = express();
+    app.get(<i class="s">"/api/exams"</i>, async (req, res) =&gt; {
+      res.json(await Exam.find());
+    });
+  <i class="t">&lt;/script&gt;</i>
+<i class="t">&lt;/body&gt;</i>
+<i class="t">&lt;/html&gt;</i>
+<i class="t">&lt;!DOCTYPE html&gt;</i>
+<i class="t">&lt;html lang=<i class="s">"en"</i>&gt;</i>
+<i class="t">&lt;head&gt;</i>
+  <i class="t">&lt;meta charset=<i class="s">"UTF-8"</i>&gt;</i>
+  <i class="t">&lt;title&gt;</i>Cosine Tech<i class="t">&lt;/title&gt;</i>
+  <i class="t">&lt;link rel=<i class="s">"stylesheet"</i> href=<i class="s">"style.css"</i>&gt;</i>
+<i class="t">&lt;/head&gt;</i>
+<i class="t">&lt;body&gt;</i>
+  <i class="t">&lt;header class=<i class="s">"hero"</i>&gt;</i>
+    <i class="t">&lt;h1 class=<i class="s">"title"</i>&gt;</i>I BUILD.<i class="t">&lt;/h1&gt;</i>
+    <i class="t">&lt;p&gt;</i>Digital experiences &amp; visual stories.<i class="t">&lt;/p&gt;</i>
+    <i class="t">&lt;a class=<i class="s">"cta"</i> href=<i class="s">"#work"</i>&gt;</i>Explore<i class="t">&lt;/a&gt;</i>
+  <i class="t">&lt;/header&gt;</i>
+  <i class="t">&lt;section id=<i class="s">"projects"</i>&gt;</i>
+    <i class="t">&lt;article class=<i class="s">"card"</i>&gt;</i>
+      <i class="t">&lt;h3&gt;</i>Examination Verification System<i class="t">&lt;/h3&gt;</i>
+      <i class="t">&lt;button onclick=<i class="s">"verify()"</i>&gt;</i>Scan QR<i class="t">&lt;/button&gt;</i>
+    <i class="t">&lt;/article&gt;</i>
+  <i class="t">&lt;/section&gt;</i>
+  <i class="t">&lt;script&gt;</i>
+    const app = express();
+    app.get(<i class="s">"/api/exams"</i>, async (req, res) =&gt; {
+      res.json(await Exam.find());
+    });
+  <i class="t">&lt;/script&gt;</i>
+<i class="t">&lt;/body&gt;</i>
+<i class="t">&lt;/html&gt;</i>
+</pre>
+      </div>
+      <div class="wrap">
+        <div class="hl">
+          <div class="role">Web Developer · Photographer · Videographer · Designer</div>
+          <h1>I build.<br />I capture.<br /><em>I create.</em></h1>
+          <p>Digital experiences and visual stories, crafted where technology meets creativity.</p>
+          <div class="btns">
+            <a class="btn p" href="#works">View my work</a
+            ><a
+              class="btn o"
+              data-k="whatsapp"
+              href="https://wa.me/2348022682138?text=Hello%2C%20I%20saw%20your%20portfolio%20and%20I%20would%20like%20to%20talk."
+              target="_blank"
+              rel="noopener"
+              >Let’s talk</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="rib" aria-hidden="true">
+        <div class="trk">
+          <span>Web Development</span><span>Photography</span><span>Videography</span><span>Graphic Design</span
+          ><span>Web Development</span><span>Photography</span><span>Videography</span><span>Graphic Design</span>
+        </div>
+      </div>
+    </header>
+    <!-- ============ SERVICES (what I do) ============ -->
+    <section class="s l" id="services">
+      <div class="wrap">
+        <div class="head rv">
+          <div>
+            <span class="kick">What I do</span>
+            <h2>Four crafts, <em>one studio.</em></h2>
+          </div>
+          <p class="lead">Technology gives me the tools. Creativity gives them meaning.</p>
+        </div>
+        <div class="row js-carousel">
+          <a class="sv" href="#web"
+            ><img
+              src="assets/exam-verification.jpg"
+              alt="Web Development"
+              style="object-position: top"
+              loading="lazy"
+            />
+            <div class="sb">
+              <span class="pill">01 · Web Development</span>
+              <h3>Digital Experiences</h3>
+              <p>Responsive websites and web apps with clean interfaces.</p>
+            </div></a
+          ><a class="sv" href="#photo"
+            ><img
+              src="assets/photography/cosine-media.jpg"
+              alt="Photography"
+              style="object-position: center 72%"
+              loading="lazy"
+            />
+            <div class="sb">
+              <span class="pill">02 · Photography</span>
+              <h3>Captured with intention</h3>
+              <p>Portraits, events, lifestyle and outdoor work.</p>
+            </div></a
+          ><a class="sv" href="#photo"
+            ><img src="assets/video/poster.jpg" alt="Videography" style="object-position: center" loading="lazy" />
+            <div class="sb">
+              <span class="pill">03 · Videography</span>
+              <h3>Stories in motion</h3>
+              <p>Shooting, editing, grading and production.</p>
+            </div></a
+          ><a class="sv" href="#design"
+            ><img
+              src="assets/design/samsa-makeup.jpg"
+              alt="Graphic Design"
+              style="object-position: center 22%"
+              loading="lazy"
+            />
+            <div class="sb">
+              <span class="pill">04 · Graphic Design</span>
+              <h3>Visual communication</h3>
+              <p>Posters, flyers and brand-focused design.</p>
+            </div></a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- ============ 01 · WEB DEVELOPMENT ============ -->
+    <section class="s k f" id="web">
+      <div class="wrap">
+        <div class="head rv" data-n="01">
+          <div>
+            <span class="kick">01 — Web Development</span>
+            <h2>Code that becomes <em>an experience.</em></h2>
+          </div>
+          <p class="lead">
+            From front-end interfaces to backend-connected applications, every project is designed to be useful,
+            responsive and visually clear.
+          </p>
+        </div>
+        <div class="row js-carousel">
+          <article class="pc">
+            <div class="im">
+              <img src="assets/exam-verification.jpg" alt="Examination Verification System" loading="lazy" />
+            </div>
+            <div class="bd">
+              <span class="pill">Featured project</span>
+              <h3>Examination Verification System</h3>
+              <p>HTML · CSS · JavaScript · Node.js · MongoDB · Git</p>
+            </div>
+          </article>
+          <article class="pc">
+            <div class="im"><img src="assets/ecommerce-store.jpg" alt="E-commerce Platform" loading="lazy" /></div>
+            <div class="bd">
+              <span class="pill">Interface</span>
+              <h3>E-commerce Platform</h3>
+              <p>Responsive layouts, product presentation and interactive front-end experiences.</p>
+            </div>
+          </article>
+          <article class="pc">
+            <div class="im"><img src="assets/art/code.svg" alt="Web Experiments" loading="lazy" /></div>
+            <div class="bd">
+              <span class="pill">Practice</span>
+              <h3>Web Experiments</h3>
+              <p>School websites, to-do applications, games and other projects built while growing as a developer.</p>
+            </div>
+          </article>
+          <article class="pc">
+            <div class="im"><img src="assets/art/backend.svg" alt="Backend Journey" loading="lazy" /></div>
+            <div class="bd">
+              <span class="pill">Direction</span>
+              <h3>Backend Journey</h3>
+              <p>Continuing into Node.js, APIs, databases and full-stack development.</p>
+            </div>
+          </article>
+        </div>
+        <!-- SAMPLE TESTIMONIALS: replace with real client feedback -->
+        <div class="tm rv">
+          <span class="kick">Client words</span>
+          <div class="tmg">
+            <blockquote>
+              <span class="qm">“</span>
+              <div class="stars">★★★★★</div>
+              <p>The system was simple to use from day one. Scanning, tracking and reports all worked without fuss.</p>
+              <div class="au">
+                <i>EC</i>
+                <div><b>Exam coordinator</b><small>Web development</small></div>
+              </div>
+            </blockquote>
+            <blockquote>
+              <span class="qm">“</span>
+              <div class="stars">★★★★★</div>
+              <p>Clean layout, fast on a phone, and exactly what we described. The whole process was easy.</p>
+              <div class="au">
+                <i>BO</i>
+                <div><b>Small business owner</b><small>Web development</small></div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============ 02 · PHOTOGRAPHY & VIDEOGRAPHY ============ -->
+    <section class="s l" id="photo">
+      <div class="wrap split">
+        <div class="rv">
+          <span class="kick">02 — Photography &amp; Videography</span>
+          <h2>I don’t just record moments. <em>I shape how they are remembered.</em></h2>
+          <p class="lead">
+            Photography and videography bring the creative side of Cosine Tech to life — from camera operation and
+            portraits to events, cinematic video, editing and color grading.
+          </p>
+          <div class="tags">
+            <span>Portraits</span><span>Events</span><span>Lifestyle</span><span>Video</span><span>Color Grading</span>
+          </div>
+        </div>
+        <div class="media rv">
+          <figure class="poster">
+            <img src="assets/photography/cosine-media.jpg" alt="Cosine Media — Photography Season" loading="lazy" />
+          </figure>
+          <button class="vid" type="button" aria-label="Play video">
+            <video
+              src="assets/video/preview.mp4"
+              poster="assets/video/poster.jpg"
+              muted
+              loop
+              autoplay
+              playsinline
+              preload="metadata"
+            ></video
+            ><span class="play"></span><span class="cap"><small>Videography</small>Watch the showreel</span>
+          </button>
+        </div>
+        <!-- SAMPLE TESTIMONIALS: replace with real client feedback -->
+        <div class="tm rv">
+          <span class="kick">Client words</span>
+          <div class="tmg">
+            <blockquote>
+              <span class="qm">“</span>
+              <div class="stars">★★★★★</div>
+              <p>He made everyone feel at ease, and the portraits turned out natural and full of life.</p>
+              <div class="au">
+                <i>PC</i>
+                <div><b>Portrait client</b><small>Photography</small></div>
+              </div>
+            </blockquote>
+            <blockquote>
+              <span class="qm">“</span>
+              <div class="stars">★★★★★</div>
+              <p>The edit and color grade gave our event a cinematic feel. We rewatch it all the time.</p>
+              <div class="au">
+                <i>EH</i>
+                <div><b>Event host</b><small>Videography</small></div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============ 03 · GRAPHIC DESIGN ============ -->
+    <section class="s k f" id="design">
+      <div class="wrap">
+        <div class="head rv" data-n="03">
+          <div>
+            <span class="kick">03 — Graphic Designing</span>
+            <h2>Design that <em>communicates.</em></h2>
+          </div>
+          <p class="lead">
+            Promotional graphics, flyers, posters and visual identities built to make an idea clear, attractive and
+            memorable.
+          </p>
+        </div>
+        <div class="row fl js-carousel">
+          <div class="st s1">
+            <button class="shot" type="button" data-t="Makeup & gele services" data-c="Beauty">
+              <span class="fr"
+                ><img
+                  src="assets/design/samsa-makeup.jpg"
+                  alt="Makeup & gele services — design by Cosine Tech"
+                  loading="lazy" /></span
+              ><span class="cap2"><small>Beauty</small><b>Makeup & gele services</b></span>
+            </button>
+          </div>
+          <div class="st s2">
+            <button class="shot" type="button" data-t="Annie's Food" data-c="Food & catering">
+              <span class="fr"
+                ><img
+                  src="assets/design/annies-food.jpg"
+                  alt="Annie's Food — design by Cosine Tech"
+                  loading="lazy" /></span
+              ><span class="cap2"><small>Food & catering</small><b>Annie's Food</b></span>
+            </button>
+          </div>
+          <div class="st s3">
+            <button class="shot" type="button" data-t="Worship service invitation" data-c="Church event">
+              <span class="fr"
+                ><img
+                  src="assets/design/worship-event.jpg"
+                  alt="Worship service invitation — design by Cosine Tech"
+                  loading="lazy" /></span
+              ><span class="cap2"><small>Church event</small><b>Worship service invitation</b></span>
+            </button>
+          </div>
+          <div class="st s4">
+            <button class="shot" type="button" data-t="Lagos – Akure transport" data-c="Social media">
+              <span class="fr"
+                ><img
+                  src="assets/design/transport-booking.jpg"
+                  alt="Lagos – Akure transport — design by Cosine Tech"
+                  loading="lazy" /></span
+              ><span class="cap2"><small>Social media</small><b>Lagos – Akure transport</b></span>
+            </button>
+          </div>
+        </div>
+        <!-- SAMPLE TESTIMONIALS: replace with real client feedback -->
+        <div class="tm rv">
+          <span class="kick">Client words</span>
+          <div class="tmg">
+            <blockquote>
+              <span class="qm">“</span>
+              <div class="stars">★★★★★</div>
+              <p>Our flyer got people talking. Bold, clear and exactly on brand.</p>
+              <div class="au">
+                <i>RO</i>
+                <div><b>Restaurant owner</b><small>Graphic design</small></div>
+              </div>
+            </blockquote>
+            <blockquote>
+              <span class="qm">“</span>
+              <div class="stars">★★★★★</div>
+              <p>Fast turnaround and a design that looked professional straight away.</p>
+              <div class="au">
+                <i>CM</i>
+                <div><b>Church media team</b><small>Graphic design</small></div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============ 04 · SELECTED WORK ============ -->
+    <section class="s l" id="works">
+      <div class="wrap">
+        <div class="head rv" data-n="04">
+          <div>
+            <span class="kick">04 — Selected work</span>
+            <h2>From concept <em>to finished frame.</em></h2>
+          </div>
+        </div>
+        <div class="rv">
+          <a class="wk" href="#web"
+            ><i>01</i>
+            <div>
+              <h3>Examination Verification System</h3>
+              <p>Web application · HTML · CSS · JavaScript · Node.js · MongoDB</p>
+            </div>
+            <b>↗</b></a
+          ><a class="wk" href="#web"
+            ><i>02</i>
+            <div>
+              <h3>E-commerce Interface</h3>
+              <p>Responsive front-end experience</p>
+            </div>
+            <b>↗</b></a
+          ><a class="wk" href="#photo"
+            ><i>03</i>
+            <div>
+              <h3>Photography Collection</h3>
+              <p>Portraits · Events · Lifestyle · Outdoor</p>
+            </div>
+            <b>↗</b></a
+          ><a class="wk" href="#photo"
+            ><i>04</i>
+            <div>
+              <h3>Creative Video Projects</h3>
+              <p>Shooting · Editing · Color Grading</p>
+            </div>
+            <b>↗</b></a
+          ><a class="wk" href="#design"
+            ><i>05</i>
+            <div>
+              <h3>Flyers & Brand Graphics</h3>
+              <p>Posters · Promotions · Event design</p>
+            </div>
+            <b>↗</b></a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- ============ 05 · ABOUT ============ -->
+    <section class="s k f" id="about">
+      <div class="wrap ab">
+        <div class="rv">
+          <span class="kick">05 — The creator</span>
+          <h2>Technology gives me the tools. <em>Creativity gives them meaning.</em></h2>
+          <p class="lead">
+            Cosine Tech is a personal digital studio built around Peter’s multidisciplinary work across web development,
+            photography, videography and graphic design.
+          </p>
+        </div>
+        <div class="sk rv">
+          <div><i>01</i>Web Development</div>
+          <div><i>02</i>Photography</div>
+          <div><i>03</i>Videography</div>
+          <div><i>04</i>Graphic Design</div>
+          <div><i>05</i>Photo Editing</div>
+          <div><i>06</i>Video Post-Production</div>
+        </div>
+      </div>
+    </section>
+    <!-- ============ 06 · CONTACT ============ -->
+    <section class="s l ct" id="contact">
+      <div class="wrap rv">
+        <span class="kick">06 — Let’s create</span>
+        <h2>Have an <em>idea?</em></h2>
+        <p class="lead">
+          Whether it is a website, a visual story, a campaign or something entirely new, Cosine Tech is built to turn
+          ideas into polished digital and visual work.
+        </p>
+        <a
+          class="btn p"
+          data-k="whatsapp"
+          href="https://wa.me/2348022682138?text=Hello%2C%20I%20saw%20your%20portfolio%20and%20I%20would%20like%20to%20talk."
+          target="_blank"
+          rel="noopener"
+          >Chat with me on WhatsApp ↗</a
+        ><!-- SOCIAL LINKS: replace each YOUR-... placeholder with your real link. WhatsApp format: https://wa.me/234XXXXXXXXXX?text=Hello%20Peter -->
+        <div class="socs">
+          <a
+            data-k="github"
+            data-todo
+            title="Link coming soon"
+            class="soc"
+            href="#contact"
+            target="_blank"
+            rel="noopener"
+            style="animation-delay: 0.2s"
+            ><i>GH</i><span>GitHub</span></a
+          ><a
+            data-k="linkedin"
+            data-todo
+            title="Link coming soon"
+            class="soc"
+            href="#contact"
+            target="_blank"
+            rel="noopener"
+            style="animation-delay: 0.3s"
+            ><i>in</i><span>LinkedIn</span></a
+          ><a
+            data-k="facebook"
+            data-todo
+            title="Link coming soon"
+            class="soc"
+            href="#contact"
+            target="_blank"
+            rel="noopener"
+            style="animation-delay: 0.4s"
+            ><i>f</i><span>Facebook</span></a
+          ><a
+            data-k="instagram"
+            data-todo
+            title="Link coming soon"
+            class="soc"
+            href="#contact"
+            target="_blank"
+            rel="noopener"
+            style="animation-delay: 0.5s"
+            ><i>ig</i><span>Instagram</span></a
+          ><a
+            data-k="whatsapp"
+            data-todo
+            title="Link coming soon"
+            class="soc"
+            href="#contact"
+            target="_blank"
+            rel="noopener"
+            style="animation-delay: 0.6s"
+            ><i>WA</i><span>WhatsApp</span></a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- ============ FOOTER ============ -->
+    <footer>
+      <div class="wrap">
+        <div>© 2026 Cosine Tech</div>
+        <div class="fsoc">
+          <a data-k="github" data-todo href="#contact" title="Link coming soon">GitHub</a
+          ><a data-k="linkedin" data-todo href="#contact" title="Link coming soon">LinkedIn</a
+          ><a data-k="facebook" data-todo href="#contact" title="Link coming soon">Facebook</a>
+        </div>
+      </div>
+    </footer>
+    <!-- ============ DIALOGS (lightbox + video) ============ -->
+    <dialog id="lb">
+      <button class="dx" aria-label="Close">×</button><button class="dn pv" aria-label="Previous">‹</button
+      ><img alt="" />
+      <p></p>
+      <button class="dn nx" aria-label="Next">›</button>
+    </dialog>
+    <dialog id="vb">
+      <button class="dx" aria-label="Close">×</button><video controls playsinline preload="none"></video>
+    </dialog>
+  </body>
+</html>
